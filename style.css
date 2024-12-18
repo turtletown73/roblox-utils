@@ -2,7 +2,11 @@ body {
     background-color: darkslategrey;
     color: lightsteelblue;
     text-align: center;
-    line-height: 250%;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 3%;
 }
 
 button {
@@ -12,6 +16,8 @@ button {
     transition-duration: 50ms;
     width: 50%;
     height: 5vh;
+    justify-content: space-between;
+    margin-bottom: 3%;
 }
 
 button:hover {
@@ -25,10 +31,12 @@ button:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    height: 50%;
+    width: 50%;
 }
 
 #QuickLaunchList {
-    line-height: 350%;
+    display: grid;
+    place-items: center;
 }
