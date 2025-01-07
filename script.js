@@ -1,19 +1,9 @@
-let games = document.getElementsByClassName("QuickLaunchGame");
-let privates = document.getElementsByClassName("QuickLaunchPrivate");
+let tools = document.getElementsByClassName("tool");
 
-for (let i = 0; i < games.length; i++) {
-    placeId = games.item(i).getAttribute("placeId");
+for (let i = 0; i < tools.length; i++) {
+    src = tools.item(i).getAttribute("src");
 
-    games.item(i).onclick = function() {
-        window.location.href = `roblox://placeId=${placeId}/`
-    }
-}
-
-for (let i = 0; i < privates.length; i++) {
-    placeId = privates.item(i).getAttribute("placeId");
-    linkCode = privates.item(i).getAttribute("linkCode");
-
-    privates.item(i).onclick = function() {
-        window.location.href = `roblox://placeId=${placeId}&linkCode=${linkCode}/`
+    tools.item(i).onclick = function() {
+        window.location.assign(src)
     }
 }

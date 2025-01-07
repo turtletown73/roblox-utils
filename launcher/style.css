@@ -36,7 +36,7 @@ button:hover {
     width: 50%;
 }
 
-#ToolList {
+#QuickLaunchList {
     display: grid;
     place-items: center;
 }
