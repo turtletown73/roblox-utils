@@ -12,7 +12,7 @@ h1 {
 button {
     background-color: darkslategrey;
     color: lightsteelblue;
-    border-color: lightsteelblue;
+    border: lightsteelblue solid 2px;
     transition-duration: 50ms;
     width: 50%;
     height: 5vh;
@@ -23,7 +23,7 @@ button {
 button:hover {
     background-color: lightsteelblue;
     color: darkslategrey;
-    border-color: darkslategrey;
+    border: darkslategrey solid 2px;
 }
 
 #contentt {
@@ -39,4 +39,36 @@ button:hover {
 #QuickLaunchList {
     display: grid;
     place-items: center;
+}
+
+#addDiv {
+    border: lightsteelblue solid 2px;
+}
+
+#addQuickLaunch {
+    font-size: large;
+    height: 5vh;
+    width: 5vh;
+    margin-bottom: 1%;
+    margin-top: 0.5%;
+}
+
+#quickLaunchLink {
+    font-size: large;
+    height: calc(5vh - 6px);
+    background-color: darkslategrey;
+    color: lightsteelblue;
+    border: lightsteelblue solid 2px;
+    margin-top: 1%;
+    margin-bottom: 0.5%;
+}
+
+#quickLaunchName {
+    font-size: large;
+    height: calc(5vh - 6px);
+    background-color: darkslategrey;
+    color: lightsteelblue;
+    border: lightsteelblue solid 2px;
+    margin-top: 1%;
+    margin-bottom: 0.5%;
 }
